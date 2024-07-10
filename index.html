@@ -124,8 +124,8 @@
             </section>
         </nav>
         <main class="grow">
-            <div class="bg-[#212121] h-screen w-full py-1">
-                <div class="flex px-2 py-1 justify-between">
+            <div class="bg-[#212121] h-screen w-full py-1 flex flex-col justify-between items-center">
+                <div class="flex px-2 py-1 justify-between w-full">
                     <div class="hover:bg-[#2E2E2E] rounded-lg py-1.5 px-3 text-[#B4B4B4] cursor-pointer sticky left-24 flex items-center gap-1">
                         <span class="text-lg">ChatGPT</span>
                         <span class="material-symbols-outlined">
@@ -138,9 +138,19 @@
                         </span>
                     </div>
                 </div>
-            </div>
-            <div class="h-full">
-                
+                <div class="grow"></div>
+                <div class="w-full flex flex-col items-center">
+                    <div class="max-w-[768px] w-full h-[52px] bg-[#2E2E2E] px-2.5 flex items-center rounded-full">
+                        <span class="material-symbols-outlined px-2 cursor-pointer text-white">
+                            attach_file
+                        </span>
+                        <input id="message-chatgpt" type="text" class="w-full h-full bg-transparent outline-none text-white" placeholder="Message ChatGPT">
+                        <span id="send-message-btn" class="material-symbols-outlined bg-[#676767] p-1 rounded-full">
+                            arrow_upward
+                        </span>
+                    </div>
+                    <span class="text-[#B2B2B2] text-[12px] p-2">ChatGPT can make mistakes. Check important info.</span>
+                </div>
             </div>
         </main>
     </div>
