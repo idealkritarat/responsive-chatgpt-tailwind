@@ -19,3 +19,10 @@ $(messageChatgpt).keydown(function (e) {
         $(sendMessageBtn).addClass("hover:bg-[#C6C6C6] bg-white");
     }
 });
+
+
+const dropdownBtn = $("#dropdown-btn");
+const dropdownMenu = $("#dropdown-menu");
+$(dropdownBtn).click(function (e) { 
+    $(dropdownMenu).toggleClass("hidden");
+});
